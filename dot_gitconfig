@@ -1,0 +1,20 @@
+[user]
+    name = "John Marsden"
+    email = "john@johnmarsden.dev"
+    signingKey = "5E48CA3545E03DD7"
+
+[commit]
+    gpgSign = true
+
+[tag]
+    gpgSign = true
+
+[core]
+    sshCommand = "ssh -i ~/.ssh/keys/personal.id_ed25519"
+
+[includeIf "gitdir:~/git/cyberskyline/"]
+    path="~/git/research.config"
+
+[includeIf "gitdir:~/git/johnmarsden-edu/"]
+    path="~/git/research.config"
+
